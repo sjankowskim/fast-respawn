@@ -1,5 +1,5 @@
 {
-  "$type": "ThunderRoad.LevelData, ThunderRoad",
+  "$type": "ThunderRoad.LevelData, Assembly-CSharp",
   "id": "Master",
   "version": 3,
   "modes": [
@@ -7,9 +7,9 @@
       "name": "Default",
       "modules": [
         {
-			"$type": "ThunderRoad.LevelModuleDeath, ThunderRoad",
-			"behaviour": "ReloadLevel",
-			"delayBeforeLoad": 3.0
+          "$type": "ThunderRoad.LevelModuleDeath, ThunderRoad",
+          "behaviour": "ReloadLevel",
+          "delayBeforeLoad": 3.00
         }
       ]
     }
