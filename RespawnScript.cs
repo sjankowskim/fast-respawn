@@ -1,5 +1,4 @@
 ﻿using ThunderRoad;
-using UnityEngine;
 
 namespace FastRespawn
 {
@@ -56,7 +55,7 @@ namespace FastRespawn
 
         private void OnLevelLoad(LevelData levelData, EventTime eventTime)
         {
-            if (Level.current.mode.TryGetModule<LevelModuleDeath>(out var deathModule))
+            if (eventTime == EventTime.OnEnd && Level.current.mode.TryGetModule<LevelModuleDeath>(out var deathModule))
             {
                 deathModule.behaviour = deathBehaviour;
                 deathModule.delayBeforeLoad = delay;
